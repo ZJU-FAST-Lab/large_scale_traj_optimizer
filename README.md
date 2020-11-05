@@ -8,4 +8,4 @@ __Related Paper__: Generating Large-Scale Trajectories with Polynomial Double De
 
 (Submitted to ICRA2021. ArXiv version is coming soon.)
 
-__Author__: Zhepei Wang and [Fei Gao](https://ustfei.com/) from the [ZJU Fast Lab](http://www.kivact.com/).
+__Author__: [Zhepei Wang](https://zhepeiwang.github.io/) and [Fei Gao](https://ustfei.com/) from the [ZJU Fast Lab](http://www.kivact.com/).
