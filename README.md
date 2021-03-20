@@ -1,7 +1,7 @@
 # large_scale_traj_optimizer
 Generating Large-Scale Trajectories Efficiently using Double Descriptions of Polynomials
 
-The source code will be __released before 31 March 2021.__
+The source code is __to be released before 31 March 2021.__
 
 ## 0. About
 This is a high-performance large-scale trajectory optimizer. It achieves almost the same trajectory quality as the global trajectory optimizer in [Teach-Repeat-Replan](https://github.com/HKUST-Aerial-Robotics/Teach-Repeat-Replan) while using significantly less computation time.
