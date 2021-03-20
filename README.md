@@ -8,6 +8,6 @@ This is a high-performance large-scale trajectory optimizer. It achieves almost 
 
 __Related Paper__: Generating Large-Scale Trajectories with Polynomial Double Descriptions ([video](https://zhepeiwang.github.io/pubs/icra_2021_sub_largescale.mp4))
 
-(Submitted to ICRA2021. ArXiv version available [here}(https://arxiv.org/abs/2011.02662v2).)
+(Submitted to ICRA2021. ArXiv version is available [here](https://arxiv.org/abs/2011.02662v2).)
 
 __Author__: [Zhepei Wang](https://zhepeiwang.github.io/) and [Fei Gao](https://ustfei.com/) from the [ZJU Fast Lab](http://zju-fast.com/).
