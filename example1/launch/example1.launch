@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+    <node pkg="example1" type="example1_node" name="example1" output="screen">
+    </node>
+</launch>
