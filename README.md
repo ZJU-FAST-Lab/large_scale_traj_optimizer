@@ -1,7 +1,7 @@
 # Large-Scale Trajectory Optimizer
 This is probably __the fastest__ minimum jerk or minimum snap trajectory generation you can find.
 
-It also provides __analytical gradient__ for jerk/snap energy w.r.t. time allocations and waypoints.
+It also provides __analytical gradient__ of energy with respect to time allocations and waypoints.
 
 ## 0. About
 If this repo helps you, please cite the paper below.
