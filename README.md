@@ -9,7 +9,7 @@ This is a highly-optimized implementation for minimum jerk/snap trajectories wit
 
 Related Paper: __Generating Large-Scale Trajectories with Polynomial Double Descriptions__
 
-(Accepted by ICRA2021. [ArXiv version](https://arxiv.org/abs/2011.02662v2) and [video](https://zhepeiwang.github.io/pubs/icra_2021_sub_largescale.mp4) are all available now.)
+(Accepted by ICRA2021. [ArXiv version](https://arxiv.org/abs/2011.02662v2) and [video](https://www.youtube.com/watch?v=tA3fIyggH4I) are all available now.)
 
 __Author__: [Zhepei Wang](https://zhepeiwang.github.io/) and [Fei Gao](https://ustfei.com/) from the [ZJU Fast Lab](http://zju-fast.com/).
 
