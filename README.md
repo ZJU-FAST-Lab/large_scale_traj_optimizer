@@ -5,11 +5,20 @@ It also provides __analytical gradient__ of energy with respect to time allocati
 
 ## 0. About
 If this repo helps you, please cite the paper below.
-This is a highly-optimized implementation for minimum jerk/snap trajectories with exact gradient w.r.t. time allocation and waypoints. It is based on completely analytical results of the following paper. If this repo helps you, please cite our paper:
+This is a highly-optimized implementation for minimum jerk/snap trajectories with exact gradient w.r.t. time allocation and waypoints. It is based on completely analytical results of the following paper.
 
-Related Paper: __Generating Large-Scale Trajectories with Polynomial Double Descriptions__
+Related Paper: [__Generating Large-Scale Trajectories with Polynomial Double Descriptions__](https://zhepeiwang.github.io/pubs/icra_2021_sub_largescale.pdf)
 
-(Accepted by ICRA2021. [ArXiv version](https://arxiv.org/abs/2011.02662v2) and [video](https://www.youtube.com/watch?v=tA3fIyggH4I) are all available now.)
+(Accepted by ICRA2021. [Video](https://www.youtube.com/watch?v=tA3fIyggH4I))
+
+If this repo helps you, please cite our paper:
+
+    @article{WANG2020GLST,
+        title={Generating Large-Scale Trajectories Efficiently using Double Descriptions of Polynomials},
+        author={Wang, Zhepei and Ye, Hongkai and Xu, Chao and Gao, Fei},
+        journal={arXiv preprint arXiv:2011.02662v2},
+        year={2020}
+    }
 
 __Author__: [Zhepei Wang](https://zhepeiwang.github.io/) and [Fei Gao](https://ustfei.com/) from the [ZJU Fast Lab](http://zju-fast.com/).
 

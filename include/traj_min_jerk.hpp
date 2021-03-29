@@ -68,7 +68,6 @@ private:
             double t1 = duration;
             double t2 = t1 * t1;
 
-            // Inverse mapping is obtained analytically
             // It maps boundary condition to normalized coefficient matrix
             nCoeffMat.col(0) = 0.5 * (boundCond.col(5) - boundCond.col(2)) * t2 -
                                3.0 * (boundCond.col(1) + boundCond.col(4)) * t1 +
