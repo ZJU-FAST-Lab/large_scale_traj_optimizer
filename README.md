@@ -7,7 +7,7 @@ It also provides __analytical gradient__ of energy with respect to time allocati
 If this repo helps you, please cite the paper below.
 This is a highly-optimized implementation for minimum jerk/snap trajectories with exact gradient w.r.t. time allocation and waypoints. It is based on completely analytical results of the following paper.
 
-Related Paper: [__Generating Large-Scale Trajectories with Polynomial Double Descriptions__](https://zhepeiwang.github.io/pubs/icra_2021_sub_largescale.pdf)
+Related Paper: [__Generating Large-Scale Trajectories with Polynomial Double Descriptions__](https://zhepeiwang.github.io/pubs/icra_2021_largescale.pdf)
 
 (Accepted by ICRA2021. [Video](https://www.youtube.com/watch?v=tA3fIyggH4I))
 
@@ -27,3 +27,7 @@ __Author__: [Zhepei Wang](https://zhepeiwang.github.io/) and [Fei Gao](https://u
 __Example 1__ gives the computation speed of our implementation.
 
 __Example 2__ will be released soon. It is a high-performance large-scale trajectory optimizer. It achieves almost the same trajectory quality as the global trajectory optimizer in [Teach-Repeat-Replan](https://github.com/HKUST-Aerial-Robotics/Teach-Repeat-Replan) while using significantly less computation time.
+
+## 3. Performance
+
+We compare our implementation with four existing works.
