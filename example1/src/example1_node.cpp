@@ -110,7 +110,7 @@ int main(int argc, char **argv)
     std::chrono::high_resolution_clock::time_point tc0, tc1, tc2;
     double d0, d1;
 
-    for (int i = 2; i <= 256 && ok(); i++)
+    for (int i = 2; i <= 128 && ok(); i++)
     {
         d0 = d1 = 0.0;
         for (int j = 0; j < groupSize && ok(); j++)
@@ -142,8 +142,8 @@ int main(int argc, char **argv)
         }
 
         std::cout << "Piece Number: " << i
-                  << " Minimum Jerk Computation Time: " << d0 / groupSize
-                  << " Minimum Snap Computation Time: " << d1 / groupSize << std::endl;
+                  << " MinJerk Comp. Time: " << d0 / groupSize << " s"
+                  << " MinSnap Comp. Time: " << d1 / groupSize << " s" << std::endl;
 
         ros::spinOnce();
         lp.sleep();
