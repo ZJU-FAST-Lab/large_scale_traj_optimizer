@@ -1,14 +1,15 @@
 # Large-Scale Trajectory Optimizer
-This is probably __the fastest__ minimum jerk or minimum snap trajectory generation you can find.
+This is __probably the fastest__ minimum jerk or minimum snap trajectory generation you can find.
 
 It also provides __analytical gradient__ of energy with respect to time allocations and waypoints.
 
 ## 0. About
 If this repo helps you, please cite the paper below.
+This is a highly-optimized implementation for minimum jerk/snap trajectories with exact gradient w.r.t. time allocation and waypoints. It is based on completely analytical results of the following paper. If this repo helps you, please cite our paper:
 
 Related Paper: __Generating Large-Scale Trajectories with Polynomial Double Descriptions__
 
-(Accepted by ICRA2021. [ArXiv version](https://arxiv.org/abs/2011.02662v2)and [video](https://zhepeiwang.github.io/pubs/icra_2021_sub_largescale.mp4) are all available now.)
+(Accepted by ICRA2021. [ArXiv version](https://arxiv.org/abs/2011.02662v2) and [video](https://zhepeiwang.github.io/pubs/icra_2021_sub_largescale.mp4) are all available now.)
 
 __Author__: [Zhepei Wang](https://zhepeiwang.github.io/) and [Fei Gao](https://ustfei.com/) from the [ZJU Fast Lab](http://zju-fast.com/).
 
