@@ -6,6 +6,7 @@ It also provides __analytical gradient__ for jerk/snap energy w.r.t. time alloca
 If this repo helps you, please cite the paper below.
 
 Related Paper: __Generating Large-Scale Trajectories with Polynomial Double Descriptions__
+
 (Accepted by ICRA2021. [ArXiv version](https://arxiv.org/abs/2011.02662v2)and [video](https://zhepeiwang.github.io/pubs/icra_2021_sub_largescale.mp4) are all available now.)
 
 __Author__: [Zhepei Wang](https://zhepeiwang.github.io/) and [Fei Gao](https://ustfei.com/) from the [ZJU Fast Lab](http://zju-fast.com/).
