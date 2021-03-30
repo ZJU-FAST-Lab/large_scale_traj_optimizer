@@ -30,4 +30,11 @@ __Example 2__ will be released soon. It is a high-performance large-scale trajec
 
 ## 3. Performance
 
-We compare our implementation with four existing works.
+We compare our implementation with four existing works. The performance is shown as follows.
+
+<p align="center">
+  <img src="misc/ModerateScale.png" width = "640" height = "375"/>
+</p>
+<p align="center">
+  <img src="misc/LargeScale.png" width = "640" height = "272"/>
+</p>
