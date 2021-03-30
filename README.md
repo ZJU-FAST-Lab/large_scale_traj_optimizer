@@ -39,8 +39,6 @@ We compare our implementation with four existing works. The performance is shown
   <img src="misc/LargeScale.png" width = "640" height = "272"/>
 </p>
 
-<sub> <em> Burke et al., “Generating minimum-snap quadrotor trajectories really fast,” IROS 2020. </em> </sub>
-
-<sub> <em> Bry et al., “Aggressive flight of fixed-wing and quadrotor aircraft in dense indoor environments,” IJRR 2015. </em> </sub>
-
+<sub> <em> Burke et al., “Generating minimum-snap quadrotor trajectories really fast,” IROS 2020. </em> </sub> <br/>
+<sub> <em> Bry et al., “Aggressive flight of fixed-wing and quadrotor aircraft in dense indoor environments,” IJRR 2015. </em> </sub> <br/>
 <sub> <em> Mellinger et al., “Minimum snap trajectory generation and control for quadrotors,” ICRA 2011. </em> </sub>
