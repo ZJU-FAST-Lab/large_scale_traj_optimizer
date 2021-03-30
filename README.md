@@ -4,7 +4,7 @@ This is __probably the fastest__ minimum jerk or minimum snap trajectory generat
 It also provides __analytical gradient__ of energy with respect to time allocations and waypoints.
 
 ## 1. About
-This is a highly-optimized implementation for minimum jerk/snap trajectories with exact gradient w.r.t. time allocation and waypoints. It is based on completely analytical results of the following paper.
+This is a highly-optimized implementation for minimum jerk/snap trajectories with exact gradient w.r.t. time allocation and waypoints. All involved computations enjoy [__linear time and space complexity__](https://en.wikipedia.org/wiki/Time_complexity). It is based on completely analytical results of our paper. Only [two header files](https://github.com/ZJU-FAST-Lab/large_scale_traj_optimizer/tree/main/include) are all you need to use our module as __a super efficient differentiable black box__.
 
 Related Paper: [__Generating Large-Scale Trajectories with Polynomial Double Descriptions__](https://zhepeiwang.github.io/pubs/icra_2021_largescale.pdf)
 
