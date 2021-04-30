@@ -29,7 +29,7 @@ __Example 2__ will be released soon. It is a high-performance large-scale trajec
 
 ## 3. Performance
 
-We compare our implementation with four existing works. The performance is shown as follows.
+We compare our original implementation with four existing works. The performance is shown as follows. The performance of the up-to-date master branch is significantly higher than that is shown in the figure.
 
 <p align="center">
   <img src="misc/ModerateScale.png" width = "640" height = "375"/>
