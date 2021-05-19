@@ -241,7 +241,7 @@ namespace min_jerk
             }
             if (coeff.head(N - 1).squaredNorm() < DBL_EPSILON)
             {
-                return 0.0;
+                return getVel(0.0).norm();
             }
             else
             {
@@ -296,7 +296,7 @@ namespace min_jerk
             }
             if (coeff.head(N - 1).squaredNorm() < DBL_EPSILON)
             {
-                return 0.0;
+                return getAcc(0.0).norm();
             }
             else
             {
