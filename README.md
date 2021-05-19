@@ -23,6 +23,8 @@ __Author__: [Zhepei Wang](https://zhepeiwang.github.io/) and [Fei Gao](https://u
 
 ## 2. Examples
 
+Please use __catkin_make__ of ROS to build these examples.
+
 __Example 1__ gives the computation speed of our implementation.
 
 __Example 2__ will be released soon. It is a high-performance large-scale trajectory optimizer. It achieves almost the same trajectory quality as the global trajectory optimizer in [Teach-Repeat-Replan](https://github.com/HKUST-Aerial-Robotics/Teach-Repeat-Replan) while using significantly less computation time.
