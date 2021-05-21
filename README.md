@@ -25,7 +25,7 @@ __Author__: [Zhepei Wang](https://zhepeiwang.github.io/) and [Fei Gao](https://u
 
 __a__. Initialize an instance of "__JerkOpt/SnapOpt__"
 
-__b__. Call "__reset__" to specify the piece number and initial/terminal conditions. The i-th column of "headState/tailState" is a 3-dimensional specified (i-1)-order derivative.
+__b__. Call "__reset__" to specify the piece number and initial/terminal conditions. The i-th column of "headState/tailState" is a 3-dimensional specified (i-1)-order derivative. For example, the initial/final position is always stored in the first column.
 
 __c__. Call "__generate__" to compute a minimum jerk/snap trajectory that passes intermediate waypoints with specified time allocations. The i-th column of "__inPs__" is a 3-dimensional vector of the i-th intermediate waypoint.
 
