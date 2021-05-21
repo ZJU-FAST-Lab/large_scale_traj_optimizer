@@ -21,7 +21,26 @@ If this repo helps you, please cite our paper:
 
 __Author__: [Zhepei Wang](https://zhepeiwang.github.io/) and [Fei Gao](https://ustfei.com/) from the [ZJU Fast Lab](http://zju-fast.com/).
 
-## 2. Examples
+## 2. How to Use
+
+__a__. Initialize an instance of "__JerkOpt/SnapOpt__"
+
+__b__. Call "__reset__" to specify the piece number and initial/terminal conditions. The i-th column of "headState/tailState" is a 3-dimensional specified (i-1)-order derivative.
+
+__c__. Call "__generate__" to compute a minimum jerk/snap trajectory that passes intermediate waypoints with specified time allocations. The i-th column of "__inPs__" is a 3-dimensional vector of the i-th intermediate waypoint.
+
+__d__. Call "__getObjective__" to get energy cost.
+
+__e__. Call "__getGradT__" and "__getGradInnerP__" to obtain gradients for the specified time allocation and intermediate waypoints.
+
+__f__. If needed, repeat __c__, __d__, and __e__ to optimize time allocation and intermediate waypoints using the objective and the gradient.
+
+__g__. Call "__getTraj__" to obtain the trajectory.
+
+Note: Part __c__ must be conducted after __a__ and __b__. Part __d__, __e__, __f__ and __g__ must be conducted after __c__.
+
+
+## 3. Examples
 
 Please use __catkin_make__ of ROS to build these examples.
 
@@ -29,7 +48,7 @@ __Example 1__ gives the computation speed of our implementation.
 
 __Example 2__ will be released soon. It is a high-performance large-scale trajectory optimizer. It achieves almost the same trajectory quality as the global trajectory optimizer in [Teach-Repeat-Replan](https://github.com/HKUST-Aerial-Robotics/Teach-Repeat-Replan) while using significantly less computation time.
 
-## 3. Performance
+## 4. Performance
 
 We compare our original implementation with four existing works. The performance is shown as follows. The performance of the up-to-date master branch is significantly higher than that is shown in the figure.
 
