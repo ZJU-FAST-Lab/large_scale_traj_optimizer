@@ -101,6 +101,7 @@ int main(int argc, char **argv)
     MatrixXd route;
     VectorXd ts;
     Matrix3d iS, fS;
+    Eigen::Matrix<double, 3, 4> iSS, fSS;
     iS.setZero();
     fS.setZero();
     Vector3d zeroVec(0.0, 0.0, 0.0);
@@ -120,7 +121,6 @@ int main(int argc, char **argv)
             fS.col(0) << route.rightCols<1>();
             ts = allocateTime(route, 3.0, 3.0);
 
-            Eigen::MatrixXd iSS(3, 4), fSS(3, 4);
             iSS << iS, Eigen::MatrixXd::Zero(3, 1);
             fSS << fS, Eigen::MatrixXd::Zero(3, 1);
 

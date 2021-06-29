@@ -743,7 +743,8 @@ namespace min_jerk
         // This function solves Ax=b, then stores x in b
         // The input b is required to be N*m, i.e.,
         // m vectors to be solved.
-        inline void solve(Eigen::MatrixXd &b) const
+        template <typename EIGENMAT>
+        inline void solve(EIGENMAT &b) const
         {
             int iM;
             for (int j = 0; j <= N - 1; j++)
@@ -775,11 +776,11 @@ namespace min_jerk
 
     private:
         int N;
-        Eigen::MatrixXd Ps;
-        Eigen::MatrixXd VAs;
+        Eigen::Matrix3Xd Ps;
+        Eigen::Matrix3Xd VAs;
         Eigen::VectorXd T;
         BandedSystem A;
-        Eigen::MatrixXd b;
+        Eigen::MatrixX3d b;
 
         // Temp variables
         Eigen::VectorXd t2;
@@ -853,7 +854,7 @@ namespace min_jerk
             return;
         }
 
-        inline void generate(const Eigen::MatrixXd &inPs,
+        inline void generate(const Eigen::Matrix3Xd &inPs,
                              const Eigen::VectorXd &ts)
         {
             T = ts;
@@ -891,7 +892,8 @@ namespace min_jerk
 
             if (N == 2)
             {
-                Eigen::MatrixXd invA(2, 2), bl(2, 3);
+                Eigen::Matrix2d invA;
+                Eigen::Matrix<double, 2, 3> bl;
                 invA.setZero();
                 bl.setZero();
 
@@ -1013,9 +1015,9 @@ namespace min_jerk
             return grad;
         }
 
-        inline Eigen::MatrixXd getGradInnerP(void) const
+        inline Eigen::Matrix3Xd getGradInnerP(void) const
         {
-            Eigen::MatrixXd grad(3, N - 1);
+            Eigen::Matrix3Xd grad(3, N - 1);
 
             for (int i = 1; i < N; i++)
             {

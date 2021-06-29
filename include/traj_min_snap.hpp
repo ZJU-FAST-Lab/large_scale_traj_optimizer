@@ -751,7 +751,8 @@ namespace min_snap
         // This function solves Ax=b, then stores x in b
         // The input b is required to be N*m, i.e.,
         // m vectors to be solved.
-        inline void solve(Eigen::MatrixXd &b) const
+        template <typename EIGENMAT>
+        inline void solve(EIGENMAT &b) const
         {
             int iM;
             for (int j = 0; j <= N - 1; j++)
@@ -783,11 +784,11 @@ namespace min_snap
 
     private:
         int N;
-        Eigen::MatrixXd Ps;
-        Eigen::MatrixXd VAJs;
+        Eigen::Matrix3Xd Ps;
+        Eigen::Matrix3Xd VAJs;
         Eigen::VectorXd T;
         BandedSystem A;
-        Eigen::MatrixXd b;
+        Eigen::MatrixX3d b;
 
         // Temp variables
         Eigen::VectorXd t2;
@@ -837,8 +838,8 @@ namespace min_snap
         }
 
     public:
-        inline void reset(const Eigen::MatrixXd &headState,
-                          const Eigen::MatrixXd &tailState,
+        inline void reset(const Eigen::Matrix<double, 3, 4> &headState,
+                          const Eigen::Matrix<double, 3, 4> &tailState,
                           const int &pieceNum)
         {
             N = pieceNum;
@@ -892,7 +893,7 @@ namespace min_snap
             return;
         }
 
-        inline void generate(const Eigen::MatrixXd &inPs,
+        inline void generate(const Eigen::Matrix3Xd &inPs,
                              const Eigen::VectorXd &ts)
         {
             T = ts;
@@ -951,19 +952,19 @@ namespace min_snap
 
             if (N == 2)
             {
-                Eigen::MatrixXd A(3, 3), invA(3, 3), bl(3, 3);
+                Eigen::Matrix3d A33, invA, bl;
 
-                A(0, 0) = cv11(0);
-                A(0, 1) = cv21(0);
-                A(0, 2) = cv31(0);
-                A(1, 0) = ca11(0);
-                A(1, 1) = ca21(0);
-                A(1, 2) = ca31(0);
-                A(2, 0) = cj11(0);
-                A(2, 1) = cj21(0);
-                A(2, 2) = cj31(0);
+                A33(0, 0) = cv11(0);
+                A33(0, 1) = cv21(0);
+                A33(0, 2) = cv31(0);
+                A33(1, 0) = ca11(0);
+                A33(1, 1) = ca21(0);
+                A33(1, 2) = ca31(0);
+                A33(2, 0) = cj11(0);
+                A33(2, 1) = cj21(0);
+                A33(2, 2) = cj31(0);
 
-                invA = A.inverse();
+                invA = A33.inverse();
                 bl.row(0) = (-cv00(0) * Ps.col(0) - cv01(0) * Ps.col(1) - cv02(0) * Ps.col(2) - cv10(0) * VAJs.col(0) - cv20(0) * VAJs.col(1) - cv30(0) * VAJs.col(2) - cv12(0) * VAJs.col(6) - cv22(0) * VAJs.col(7) - cv32(0) * VAJs.col(8)).transpose();
                 bl.row(1) = (-ca00(0) * Ps.col(0) - ca01(0) * Ps.col(1) - ca02(0) * Ps.col(2) - ca10(0) * VAJs.col(0) - ca20(0) * VAJs.col(1) - ca30(0) * VAJs.col(2) - ca12(0) * VAJs.col(6) - ca22(0) * VAJs.col(7) - ca32(0) * VAJs.col(8)).transpose();
                 bl.row(2) = (-cj00(0) * Ps.col(0) - cj01(0) * Ps.col(1) - cj02(0) * Ps.col(2) - cj10(0) * VAJs.col(0) - cj20(0) * VAJs.col(1) - cj30(0) * VAJs.col(2) - cj12(0) * VAJs.col(6) - cj22(0) * VAJs.col(7) - cj32(0) * VAJs.col(8)).transpose();
@@ -1119,9 +1120,9 @@ namespace min_snap
             return grad;
         }
 
-        inline Eigen::MatrixXd getGradInnerP(void) const
+        inline Eigen::Matrix3Xd getGradInnerP(void) const
         {
-            Eigen::MatrixXd grad(3, N - 1);
+            Eigen::Matrix3Xd grad(3, N - 1);
 
             for (int i = 1; i < N; i++)
             {

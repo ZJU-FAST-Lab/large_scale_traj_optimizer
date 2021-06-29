@@ -39,18 +39,15 @@ __g__. Call "__getTraj__" to obtain the trajectory.
 
 Note: Part __c__ must be conducted after __a__ and __b__. Part __d__, __e__, __f__ and __g__ must be conducted after __c__.
 
-
 ## 3. Examples
 
-Please use __catkin_make__ of ROS to build these examples.
+__Example 1__ gives the computation speed of our implementation. Please use __catkin_make__ of ROS to build the source code of this example.
 
-__Example 1__ gives the computation speed of our implementation.
-
-__Example 2__ will be released soon. It is a high-performance large-scale trajectory optimizer. It achieves almost the same trajectory quality as the global trajectory optimizer in [Teach-Repeat-Replan](https://github.com/HKUST-Aerial-Robotics/Teach-Repeat-Replan) while using significantly less computation time.
+__Example 2__ is only described in the the related paper as a high-performance large-scale trajectory optimizer. By following the paper, you can use our differentiable black box to directly optimize both the waypoints and times of a trajectory. It can achieve almost the same trajectory quality as the global trajectory optimizer in [Teach-Repeat-Replan](https://github.com/HKUST-Aerial-Robotics/Teach-Repeat-Replan) while using significantly less computation time.
 
 ## 4. Performance
 
-We compare our original implementation with four existing works. The performance is shown as follows. The performance of the up-to-date master branch is significantly higher than that is shown in the figure.
+We compare our original implementation with four existing works. The original performance is shown as follows. The performance of the up-to-date master branch is __SIGNIFICANTLY HIGHER__ than that is shown in the figure.
 
 <p align="center">
   <img src="misc/ModerateScale.png" width = "640" height = "375"/>
