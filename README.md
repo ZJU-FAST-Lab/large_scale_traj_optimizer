@@ -6,7 +6,7 @@ It also provides __analytical gradient__ of energy with respect to time allocati
 ## 1. About
 This is a highly-algorithmically-optimized implementation for minimum jerk/snap trajectories with exact gradient w.r.t. time allocation and waypoints. All involved computations enjoy [__linear time and space complexity__](https://en.wikipedia.org/wiki/Time_complexity). It is based on completely analytical results of our paper. Only [__two header files__](https://github.com/ZJU-FAST-Lab/large_scale_traj_optimizer/tree/main/include) are all you need to use our module as __a super efficient differentiable black box__.
 
-Related ICRA Paper: [__Generating Large-Scale Trajectories Efficiently using Double Descriptions of Polynomials__](https://ieeexplore.ieee.org/document/9561585)
+ICRA Paper: [__Generating Large-Scale Trajectories Efficiently using Double Descriptions of Polynomials__](https://ieeexplore.ieee.org/document/9561585)
 
 ([Video](https://www.youtube.com/watch?v=tA3fIyggH4I) and [Arxiv](https://arxiv.org/pdf/2011.02662v3.pdf) are avaiable.)
 
