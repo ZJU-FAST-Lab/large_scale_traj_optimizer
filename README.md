@@ -6,17 +6,20 @@ It also provides __analytical gradient__ of energy with respect to time allocati
 ## 1. About
 This is a highly-algorithmically-optimized implementation for minimum jerk/snap trajectories with exact gradient w.r.t. time allocation and waypoints. All involved computations enjoy [__linear time and space complexity__](https://en.wikipedia.org/wiki/Time_complexity). It is based on completely analytical results of our paper. Only [__two header files__](https://github.com/ZJU-FAST-Lab/large_scale_traj_optimizer/tree/main/include) are all you need to use our module as __a super efficient differentiable black box__.
 
-Related Paper: [__Generating Large-Scale Trajectories Efficiently using Double Descriptions of Polynomials__](https://zhepeiwang.github.io/pubs/icra_2021_largescale.pdf)
+Related ICRA Paper: [__Generating Large-Scale Trajectories Efficiently using Double Descriptions of Polynomials__](https://ieeexplore.ieee.org/document/9561585)
 
-(Accepted by ICRA2021. [Video](https://www.youtube.com/watch?v=tA3fIyggH4I))
+([Video](https://www.youtube.com/watch?v=tA3fIyggH4I) and [Arxiv](https://arxiv.org/pdf/2011.02662v3.pdf) are avaiable.)
 
 If this repo helps you, please cite our paper:
 
-    @article{WANG2020GLST,
+    @inproceedings{wang2021glst,
         title={Generating Large-Scale Trajectories Efficiently using Double Descriptions of Polynomials},
         author={Wang, Zhepei and Ye, Hongkai and Xu, Chao and Gao, Fei},
-        journal={arXiv preprint arXiv:2011.02662v2},
-        year={2020}
+        address={Xi'an, China},
+        booktitle={IEEE International Conference on Robotics and Automation},
+        pages={7436-7442},
+        year={2021},
+        organization={IEEE}
     }
 
 __Author__: [Zhepei Wang](https://zhepeiwang.github.io/) and [Fei Gao](https://ustfei.com/) from the [ZJU Fast Lab](http://zju-fast.com/).
