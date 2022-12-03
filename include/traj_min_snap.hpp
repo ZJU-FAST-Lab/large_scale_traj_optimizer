@@ -1110,7 +1110,7 @@ namespace min_snap
                 coeffsGradT(2) = -720.0 * (5.0 * iA.square() - 7.0 * iA * fA + 5.0 * fA.square() + 4.0 * iJ * iV + 3.0 * fJ * iV + 3.0 * iJ * fV + 4.0 * fJ * fV).sum();
                 coeffsGradT(3) = -960.0 * (45.0 * iA * iV - 39.0 * fA * iV + 39.0 * iA * fV - 45.0 * fA * fV + 7.0 * (iJ + fJ) * (iP - fP)).sum();
                 coeffsGradT(4) = -14400.0 * (9.0 * iV.square() + 17.0 * iV * fV + 9.0 * fV.square() + 7.0 * (iA - fA) * (iP - fP)).sum();
-                coeffsGradT(5) = 604800.0 * ((iV + fV) * (iP - fP)).sum();
+                coeffsGradT(5) = -604800.0 * ((iV + fV) * (iP - fP)).sum();
                 coeffsGradT(6) = -705600.0 * (iP - fP).square().sum();
 
                 // Calculate the gradient
